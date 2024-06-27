@@ -1,0 +1,35 @@
+﻿@model CrudTestMVC.Models.Users
+
+<h2>Create User</h2>
+
+<form action="/Create" method="post">
+    <div class="text-danger"><!-- Validation Summary --></div>
+
+    <div class="form-group">
+        <label for="name" class="control-label">Name</label>
+        <input type="text" id="name" name="name" class="form-control" />
+        <span class="text-danger"><!-- Validation for Name --></span>
+    </div>
+
+    <div class="form-group">
+        <label for="age" class="control-label">Age</label>
+        <input type="text" id="age" name="age" class="form-control" />
+        <span class="text-danger"><!-- Validation for Age --></span>
+    </div>
+
+    <div class="form-group">
+        <label for="salary" class="control-label">Salary</label>
+        <input type="text" id="salary" name="salary" class="form-control" />
+        <span class="text-danger"><!-- Validation for Salary --></span>
+    </div>
+
+    <div class="form-group">
+        <label for="depart" class="control-label">Department</label>
+        <input type="text" id="depart" name="depart" class="form-control" />
+        <span class="text-danger"><!-- Validation for Department --></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
